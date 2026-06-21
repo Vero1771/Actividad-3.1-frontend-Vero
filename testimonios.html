@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltTech · Testimonios | Opiniones de nuestros clientes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,1" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">VT</span>
+                    <span class="logo-text">VoltTech</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                        <li><a href="testimonios.html" class="nav-link active">Testimonios</a></li>
+                        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <h1 class="page-title">Opiniones de clientes</h1>
+                <p class="page-subtitle">Comparte tu experiencia y conoce lo que otros dicen de VoltTech</p>
+            </div>
+        </section>
+
+        <section class="section satisfaction-stats">
+            <div class="container">
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-box">
+                        <span class="stat-number" id="avgRating">0.0</span>
+                        <span class="stat-label">Calificación promedio</span>
+                        <span class="stat-stars" id="avgStars">☆☆☆☆☆</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" id="totalComments">0</span>
+                        <span class="stat-label">Comentarios recibidos</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" id="recommendRate">0%</span>
+                        <span class="stat-label">Clientes que recomiendan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section comment-form-section">
+            <div class="container">
+                <div class="testimonial-form-container">
+                    <h2>Deja tu comentario</h2>
+                    <p>Tu opinión nos ayuda a mejorar y a otros clientes a tomar decisiones informadas.</p>
+                    <form id="commentForm" class="comment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" placeholder="Tu apellido" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" placeholder="tucorreo@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Calificación</label>
+                            <div class="stars-container" id="starsContainer">
+                                <span class="star" data-value="1">☆</span>
+                                <span class="star" data-value="2">☆</span>
+                                <span class="star" data-value="3">☆</span>
+                                <span class="star" data-value="4">☆</span>
+                                <span class="star" data-value="5">☆</span>
+                            </div>
+                            <input type="hidden" id="calificacion" value="0">
+                            <span class="rating-text" id="ratingText">Selecciona una calificación</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="comentario">Comentario</label>
+                            <textarea id="comentario" placeholder="Cuéntanos tu experiencia con VoltTech..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Publicar comentario</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section comment-list-section">
+            <div class="container">
+                <h2 class="section-title">Comentarios recientes</h2>
+                <p class="section-subtitle">Lo que nuestros clientes dicen de nosotros</p>
+                <div id="commentList" class="comment-list">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h4>VoltTech</h4>
+                    <p>Servicios eléctricos profesionales</p>
+                        <p>0416-1234567 Ing. Andres Rodríguez</p>
+                        <p>0416-8716254 Ing. Jorge Parra</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-apa">
+                    <p>Referencia: W3C. (2023). CSS Cascading Style Sheets. Recuperado de https://www.w3.org/Style/CSS/</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
